@@ -80,9 +80,10 @@ const NavbarMobile = () => {
           <XIcon className="w-8 h-8 " />
         </div>
         {navigation.map((item, index) => (
-          <li key={index} className="mb-8">
+          <li key={index} className="mb-8" >
             <Link
               to={item.href}
+              onClick={() => setIsOpen(false)}
               smooth={true}
               duration={500}
               offset={-70}
